@@ -44,18 +44,6 @@ function constructList() {
   // sortByPriority()
 }
 
-// function sortByPriority() {
-//   // function compare(a, b) {
-//   //   if (a.id > b.id) {
-//   //     return 1
-//   //   } elsif (a.id < b.id) {
-//   //     return -1
-//   //   } else {
-//   //     return 0
-//   //   }
-//   // }
-//   toDoList.children.sort((a, b) => a.id - b.id )
-// }
 
 // apply color coding to list elements
 function applyColor(element){
@@ -116,6 +104,7 @@ function createPriorityDropdown(){
   return priorities
 }
 
+// new input field
 function createInputField() {
   deadlineField = document.createElement("input")
   deadlineField.type = "text"
@@ -123,60 +112,3 @@ function createInputField() {
   return deadlineField
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   let input = document.getElementById("new-task-description")
-//   let taskArray = []
-//   let myToDos = document.getElementById("tasks")
-//   let form = document.getElementById("create-task-form")
-
-//   form.addEventListener('submit', e =>  {
-//     e.preventDefault()
-//     taskArray.push(input.value)
-//     e.target.reset()
-//     toDoList()
-//   } )
-
-//   function toDoList() {
-//     myToDos.innerHTML = ""
-//     for (let index = 0; index < taskArray.length; index++) {
-//       let listItem = document.createElement('li')
-//       listItem.innerText = `${taskArray[index]}`
-//       let deleteItem = document.createElement('button')
-//       deleteItem.innerText = `x`
-//       deleteItem.class = `delete`
-//       deleteItem.id = index
-//       listItem.appendChild(deleteItem)
-//       myToDos.appendChild(listItem)
-//     }
-//   }
-
-//   myToDos.addEventListener('click', e => {
-//     if (e.target.class === 'delete') {
-//       taskArray.splice(e.target.id, 1)
-//       toDoList()
-      
-//     }
-
-//   })
-
-// });
