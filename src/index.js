@@ -117,10 +117,10 @@ function createPriorityDropdown(){
 }
 
 function createInputField() {
-  userField = document.createElement("input")
-  userField.type = "text"
-  userField.placeholder = "Due By"
-  return userField
+  deadlineField = document.createElement("input")
+  deadlineField.type = "text"
+  deadlineField.placeholder = "Due By"
+  return deadlineField
 }
 
 
